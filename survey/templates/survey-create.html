@@ -1,8 +1,9 @@
 <html>
 <head>
-	<script src= "http://code.jquery.com/jquery-2.1.1.js"> </script>
-	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<style type = "text/css">
@@ -13,6 +14,9 @@
 		margin-right: auto;
 		text-align: center;
 	}
+	.hey{
+				font-family: 'Lobster', cursive;
+			}
 	.centerform
 	{
 		margin-left: auto;
@@ -23,11 +27,11 @@
 	   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href={% url 'root' %}>Survey Site</a>
+          <a class="navbar-brand hey" href={% url 'root' %}>Survey Site</a>
         </div>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Add Survey</a></li>
-            <li><a href={% url 'admin-panel'%}>View Survey Data</a></li>
+            <li><a class = "hey" href="#">Add Survey</a></li>
+            <li><a class = "hey" href={% url 'admin-panel'%}>View Survey Data</a></li>
           </ul>
       </div>
     </div>
